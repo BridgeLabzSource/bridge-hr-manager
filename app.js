@@ -5,12 +5,12 @@
  */
 
 /*create a module myApp and inject the services*/
-var app = angular.module('myApp', ['ui.router', 'firebase', 'ngmaterial']);
+var app = angular.module('myApp', ['ui.router', 'firebase', 'ngMaterial']);
 
 /*use config to configure different states and pass services in config function*/
 app.config(function($stateProvider, $urlRouterProvider) {
 
-    /* initially app goes to the home page*/
+    /* initially app goes to the login page*/
     $urlRouterProvider.otherwise('/login');
 
     /* $stateProvider give different states*/
