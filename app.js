@@ -11,8 +11,7 @@ var app = angular.module('myApp', ['ui.router', 'firebase', 'ngMaterial']);
 app.config(function($stateProvider, $urlRouterProvider,$mdThemingProvider) {
 
   $mdThemingProvider.theme('default')
-     .primaryPalette('pink')
-     .accentPalette('orange');
+     .dark();
 
     /* initially app goes to the login page*/
     $urlRouterProvider.otherwise('/login');
