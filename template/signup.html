@@ -1,6 +1,6 @@
 <center>
     <!-- this div contains my whole signup form -->
-    <div layout="column" style="max-width:400px;min-width:200px;margin-top:10%;" ng-cloak>
+    <div class="myPadding" layout="column" style="max-width:400px;min-width:200px;margin-top:10%;" ng-cloak>
 
         <!-- md-toobar is used to set the text and its background -->
         <md-toolbar md-colors="::{background: 'default-primary-500-0.63'}" md-scroll-shrink ng-if="true">
@@ -25,7 +25,7 @@
                 <!-- this container contains the signup button and a link to login page-->
                 <md-input-container md-no-float class="md-block">
                     <md-button class="md-raised" type="submit">signup </md-button>
-                    <md-a ui-sref="login">Go to login</md-a>
+                    <a class="md-primary" ui-sref="login">Go to login</a>
                 </md-input-container>
             </form>
         </md-content>
