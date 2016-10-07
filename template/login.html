@@ -1,30 +1,38 @@
 <center>
     <div layout="column" style="max-width:400px;min-width:200px;margin-top:10%">
-
+      <!-- Tool bar to display the header info -->
         <md-toolbar md-colors="::{background: 'default-primary-500-0.63'}" md-scroll-shrink="true">
             <h3>
-          <span>Login</span>
-        </h3>
+              <span>Login</span>
+            </h3>
         </md-toolbar>
+
         <br/>
+
+        <!-- md-content have several input fields and control the login feature on submit it will validate by login controller-->
         <md-content md-colors="::{background: 'blue-grey'}" class="md-no-momentum">
             <form>
+
+                <!-- text field to accept email from user -->
                 <md-input-container md-no-float class="md-block">
                     <!-- Use floating placeholder instead of label -->
                     <md-icon md-svg-src="img/icons/ic_email_24px.svg" class="email"></md-icon>
                     <input ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true">
                 </md-input-container>
 
+                <!-- pasword field to accept password from user -->
                 <md-input-container md-no-float class="md-block">
                     <md-icon md-svg-src="img/icons/ic_place_24px.svg" style="display:inline-block;"></md-icon>
                     <input ng-required="true" ng-model="user.password" type="password" placeholder="password">
                 </md-input-container>
+
+                <!-- Login button and link to go signup page -->
                 <md-input-container md-no-float class="md-block">
                     <md-button class="md-raised" type="submit"> Login </md-button>
                     <md-button class="md-raised" type="reset">Reset</md-button>
                     <md-a ui-sref="signup">Go to signup</md-a>
-
                 </md-input-container>
+
             </form>
         </md-content>
     </div>
