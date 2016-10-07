@@ -8,7 +8,13 @@
 var app = angular.module('myApp', ['ui.router', 'firebase', 'ngMaterial']);
 
 /*use config to configure different states and pass services in config function*/
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider,$mdThemingProvider) {
+
+  $mdThemingProvider.theme('default')
+  .backgroundPalette('brown').dark();
+
+      // .accentPalette('orange');
+      //
 
     /* initially app goes to the login page*/
     $urlRouterProvider.otherwise('/login');
