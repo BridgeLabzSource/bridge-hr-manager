@@ -1,25 +1,28 @@
 <center>
-
+    <!-- this div contains my whole signup form -->
     <div layout="column" style="max-width:400px;min-width:200px;margin-top:10%;" ng-cloak>
 
+        <!-- md-toobar is used to set the text and its background -->
         <md-toolbar md-colors="::{background: 'default-primary-500-0.63'}" md-scroll-shrink ng-if="true">
             <h3><span>Signup</span></h3>
-        </md-toolbar>
-        <br/>
+        </md-toolbar><br/>
 
+        <!-- all the form details kept inside md-content -->
         <md-content md-colors="::{background: 'blue-grey'}" class="md-no-momentum">
             <form>
+                <!-- this container contains the email field and set the img icon-->
                 <md-input-container md-no-float class="md-block">
-                    <!-- Use floating placeholder instead of label -->
                     <md-icon md-svg-src="img/icons/ic_email_24px.svg" class="email"></md-icon>
                     <input ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true">
                 </md-input-container>
 
+                <!-- this container contains the password field and set the img icon-->
                 <md-input-container md-no-float class="md-block">
                     <md-icon md-svg-src="img/icons/ic_place_24px.svg" style="display:inline-block;"></md-icon>
                     <input ng-model="user.password" type="password" placeholder="Password" ng-required="true">
                 </md-input-container>
 
+                <!-- this container contains the signup button and a link to login page-->
                 <md-input-container md-no-float class="md-block">
                     <md-button class="md-raised" type="submit">signup </md-button>
                     <md-a ui-sref="login">Go to login</md-a>
